@@ -1,4 +1,12 @@
 // styles.scss
 .testing {
   width: percentage(5/7);
+  height: percentage(1/2);
+}
+
+body {
+    background: green;
+    font-style: italic;
+    font-size: large;
+    font-family: serif;
 }

@@ -1,2 +1,9 @@
 .testing {
-  width: 71.42857%; }
+  width: 71.42857%;
+  height: 50%; }
+
+body {
+  background: green;
+  font-style: italic;
+  font-size: large;
+  font-family: serif; }

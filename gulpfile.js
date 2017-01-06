@@ -16,10 +16,10 @@ gulp.task('hello', function(){
 
 // Compile sass
 gulp.task('sass', function(){
-    return gulp.src('app/scss/**/*.scss')      // Get all scss files
-        .pipe(sass())                            // Using gulp-sass
-        .pipe(gulp.dest('app/css'))              // Destination for generated css
-        .pipe(browserSync.reload({               // Browser refresh on every change
+    return gulp.src('app/scss/**/*.scss')               // Get all scss files
+        .pipe(sass().on('error', sass.logError))        // Using gulp-sass
+        .pipe(gulp.dest('app/css'))                     // Destination for generated css
+        .pipe(browserSync.reload({                      // Browser refresh on every change
             stream: true
         }))
 });
